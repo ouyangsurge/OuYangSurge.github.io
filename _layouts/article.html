@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<article class="article">
+  <p class="eyebrow">MOV &amp; SURGE PROTECTION ENGINEERING</p>
+  <h1>{{ page.title }}</h1>
+  <p class="meta">Updated <time datetime="{{ page.updated | date_to_xmlschema }}">{{ page.updated | date: '%B %-d, %Y' }}</time> · By <a href="{{ '/#owen' | relative_url }}">{{ page.author }}</a></p>
+  {{ content }}
+  {% include cta.html %}
+</article>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"TechArticle","@id":{{ page.url | append: '#article' | absolute_url | jsonify }},"headline":{{ page.title | jsonify }},"description":{{ page.description | jsonify }},"dateModified":"{{ page.updated | date_to_xmlschema }}","author":{"@id":{{ '/#owen' | absolute_url | jsonify }}},"publisher":{"@id":{{ '/#organization' | absolute_url | jsonify }}},"mainEntityOfPage":{"@type":"WebPage","@id":{{ page.url | absolute_url | jsonify }}}}]}</script>

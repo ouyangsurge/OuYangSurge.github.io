@@ -1,0 +1,18 @@
+# Ouyang Surge Protection
+
+> Practical MOV, TMOV and surge protection engineering for sourcing, qualification and second-source projects.
+
+## Core pages
+
+- [MOV Selection Guide](/mov-selection-guide/): Selection criteria, ratings, failure modes and validation boundaries.
+- [TMOV Guide](/tmov-thermally-protected-mov/): When thermal protection may be relevant in an MOV path.
+- [MOV Second Source Qualification](/mov-second-source-qualification/): Evidence gates from an existing component through RFQ readiness.
+- [MOV for Solar Inverter](/applications/mov-for-solar-inverter/)
+- [MOV for Energy Storage PCS](/applications/mov-for-energy-storage-pcs/)
+- [MOV for EV Charger](/applications/mov-for-ev-charger/)
+- [MOV for Industrial Power](/applications/mov-for-industrial-power/)
+
+## Contact
+
+Owen Ouyang — WhatsApp/phone +86 133 6790 9790 — 5672306@gmail.com
+

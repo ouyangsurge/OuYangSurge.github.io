@@ -1,0 +1,26 @@
+title: Ouyang Surge Protection
+tagline: MOV & Surge Protection Engineering / Second Source
+description: Practical MOV, TMOV and surge protection engineering for sourcing, qualification and second-source projects.
+url: "https://ouyangthermal.github.io"
+baseurl: "/surge-protection"
+lang: en
+timezone: Asia/Shanghai
+author:
+  name: Owen Ouyang
+permalink: pretty
+markdown: kramdown
+kramdown:
+  input: GFM
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: article
+      author: Owen Ouyang
+      updated: 2026-09-15
+exclude:
+  - README.md
+  - Gemfile
