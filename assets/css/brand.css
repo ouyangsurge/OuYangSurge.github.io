@@ -1,0 +1,27 @@
+/* Official OUYANG SURGE palette and logo treatment. */
+:root {
+  --ink: #003A8C;
+  --blue: #00A3FF;
+  --blue-dark: #003A8C;
+  --muted: #666666;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  min-width: 96px;
+}
+
+.brand-logo {
+  display: block;
+  width: 92px;
+  height: 92px;
+  object-fit: contain;
+}
+
+@media (max-width: 720px) {
+  .brand-logo {
+    width: 72px;
+    height: 72px;
+  }
+}
