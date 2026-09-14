@@ -3,6 +3,7 @@ tagline: MOV & Surge Protection Engineering / Second Source
 description: Practical MOV, TMOV and surge protection engineering for sourcing, qualification and second-source projects.
 url: "https://ouyangsurge.github.io"
 baseurl: ""
+formspree_endpoint: "https://formspree.io/f/mwlkaybq"
 lang: en
 timezone: Asia/Shanghai
 author:

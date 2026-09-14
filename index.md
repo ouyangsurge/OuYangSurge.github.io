@@ -8,7 +8,7 @@ permalink: /
   <p class="eyebrow">OUYANG SURGE PROTECTION</p>
   <h1>MOV &amp; Surge Protection Engineering</h1>
   <p class="lead">Practical MOV, TMOV and surge protection engineering for sourcing, qualification and second-source projects.</p>
-  <div class="cta-actions"><a class="button primary" href="{{ '/mov-second-source-qualification/' | relative_url }}">Discuss a MOV Application</a><a class="button" href="mailto:5672306@gmail.com?subject=MOV%20Sample%20Request">Request a Sample</a></div>
+  <div class="cta-actions"><a class="button primary" href="{{ '/ask-owen/' | relative_url }}">Discuss a MOV Application</a><a class="button" href="{{ '/ask-owen/' | relative_url }}">Ask Owen</a><a class="button" href="mailto:5672306@gmail.com?subject=MOV%20Sample%20Request">Request a Sample</a></div>
 </section>
 
 <section>

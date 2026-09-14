@@ -1,0 +1,26 @@
+---
+layout: default
+title: Ask Owen
+description: Send Owen a short private MOV, TMOV or surge protection question.
+permalink: /ask-owen/
+---
+
+<article class="article">
+  <h1>Ask Owen</h1>
+  <p class="lead">Have a MOV, TMOV or surge protection question?</p>
+  <p>Send your existing part number, datasheet or application if available.<br>Owen will review it and reply by email or WhatsApp.</p>
+  <form id="private-inquiry" class="private-inquiry-form" action="{% if site.formspree_endpoint != '' %}{{ site.formspree_endpoint }}{% else %}#{% endif %}" method="post" data-form-configured="{% if site.formspree_endpoint != '' %}true{% else %}false{% endif %}">
+    <label for="inquiry-name">Name <small>Optional</small><input id="inquiry-name" name="name" autocomplete="name" maxlength="100"></label>
+    <label for="inquiry-contact">Email or WhatsApp <span aria-hidden="true">*</span><input id="inquiry-contact" name="contact" autocomplete="email" required minlength="5" maxlength="200" aria-describedby="contact-help"><small id="contact-help">Enter an email address or WhatsApp number where Owen can reply.</small></label>
+    <label for="inquiry-question">Your Question <span aria-hidden="true">*</span><textarea id="inquiry-question" name="message" rows="6" required minlength="10" maxlength="3000" placeholder="Existing MOV/TMOV model, datasheet reference or application question"></textarea></label>
+    <div class="form-trap" aria-hidden="true"><label>Leave this field empty<input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+    <input type="hidden" name="_subject" value="New private inquiry from OUYANG SURGE">
+    <input type="hidden" name="source_page" value="Ask Owen">
+    <button type="submit">Send Inquiry</button>
+    <p class="privacy-note">Your message is private and will not be published on this website. Do not include confidential drawings or sensitive personal data in the first message.</p>
+    <p class="form-status" role="status" aria-live="polite"></p>
+  </form>
+  <p><a href="https://wa.me/8613367909790">WhatsApp Owen</a> · <a href="mailto:5672306@gmail.com?subject=MOV%20Application%20Discussion">Email Owen</a> · <a href="tel:+8613367909790">Call Owen</a></p>
+</article>
+
+<script src="{{ '/assets/js/inquiry-form.js' | relative_url }}"></script>
