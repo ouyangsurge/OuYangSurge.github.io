@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ouyangthermal.github.io/surge-protection/sitemap.xml
+Sitemap: https://ouyangsurge.github.io/sitemap.xml
