@@ -2,10 +2,14 @@
 title: MOV for Solar Inverter Surge Protection
 description: Typical MOV protection-location questions for solar inverters: PV DC input, AC output, auxiliary circuits, surge entry and second-source validation.
 permalink: /applications/mov-for-solar-inverter/
+conversion_source: solar-inverter
+conversion_application: solar-inverter
 ---
 ## Answer first
 
 MOV selection for a solar inverter starts by separating the PV DC input, AC output and auxiliary/control paths. Each can face different voltage conditions, transient paths and coordinated protection components. Identify the actual inverter topology and applicable requirements before assigning an MOV location or rating.
+
+{% include conversion-comparison.html source="solar-inverter" application="solar-inverter" %}
 
 ## Typical protection locations
 
@@ -15,6 +19,8 @@ MOV selection for a solar inverter starts by separating the PV DC input, AC outp
 | AC output / grid interface | Can line-side transient energy reach the power stage or control supply? | AC system, earthing approach, line configuration, protection level and disconnect path |
 | Auxiliary power | Does the auxiliary supply need a separate protection review? | Supply architecture, interface limits and coordinated parts |
 | Communication / control interface | Are external cables a separate entry path? | Interface standard and relevant protection architecture |
+
+{% include conversion-sample.html source="solar-inverter" application="solar-inverter" %}
 
 <aside class="notice"><strong>Typical location only.</strong> Actual topology depends on system design. This page does not place an MOV inside a power module or prescribe one circuit diagram for every inverter.</aside>
 

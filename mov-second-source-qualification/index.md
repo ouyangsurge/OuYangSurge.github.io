@@ -2,10 +2,14 @@
 title: MOV Second Source Qualification
 description: A practical MOV second-source qualification flow from existing-part definition through datasheet comparison, testing, pilot review and RFQ readiness.
 permalink: /mov-second-source-qualification/
+conversion_source: mov-second-source-qualification
+conversion_application: second-source
 ---
 ## Answer first
 
 An MOV second source is not qualified because its disc diameter, marking or headline surge value looks similar. Freeze the existing component’s electrical function, operating conditions, protection level, test method, failure-handling path and acceptance criteria; then compare a candidate in representative hardware. Qualification is evidence from screening through pilot control—not a closest-looking datasheet.
+
+{% include conversion-comparison.html source="mov-second-source-qualification" application="second-source" %}
 
 ## Qualification flow
 
@@ -21,6 +25,8 @@ An MOV second source is not qualified because its disc diameter, marking or head
 | Surge and thermal review | Electrical response, temperature, visible damage, disconnect/failure behavior where relevant | Pre/post inspection and defined post-test condition |
 | Pilot and supply control | Lot traceability, incoming checks, marking, packaging, change notification and sample-to-pilot consistency | Pilot record and responsible-owner approval |
 | Commercial review | Approved configuration, MOQ, lead time, capacity discussion and second-source strategy | RFQ scope based on the frozen technical definition |
+
+{% include conversion-sample.html source="mov-second-source-qualification" application="second-source" %}
 
 ## Why markings are not enough
 

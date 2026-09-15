@@ -2,10 +2,14 @@
 title: MOV for EV Charger Surge Protection
 description: Typical MOV and surge-protection questions for EV chargers: AC input, DC fast-charger power paths, control supplies and second-source validation.
 permalink: /applications/mov-for-ev-charger/
+conversion_source: ev-charger
+conversion_application: ev-charger
 ---
 ## Answer first
 
 MOV selection for an EV charger must follow the actual AC input, power-conversion and auxiliary/control architecture. A DC fast charger does not turn every internal node into an MOV location. Define where a transient can enter, what needs protection and which operating/fault conditions the full system must withstand.
+
+{% include conversion-comparison.html source="ev-charger" application="ev-charger" %}
 
 ## Typical protection locations
 
@@ -15,6 +19,8 @@ MOV selection for an EV charger must follow the actual AC input, power-conversio
 | DC charger power path | Which nodes are exposed by the actual converter topology? | DC voltage range, insulation, topology and protected-node tolerance |
 | Auxiliary/control power | Does the control supply have a separate protection requirement? | Supply design, interfaces, layout and component coordination |
 | External interfaces | Could cable-connected interfaces be an entry route? | Interface requirements and specified protection approach |
+
+{% include conversion-sample.html source="ev-charger" application="ev-charger" %}
 
 <aside class="notice"><strong>Typical location only.</strong> Actual topology depends on charger design. Do not infer MOV placement inside a power module from a generic charger block diagram.</aside>
 

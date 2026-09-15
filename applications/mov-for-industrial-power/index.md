@@ -2,10 +2,14 @@
 title: MOV for Industrial Power and VFD Surge Protection
 description: Practical MOV selection and second-source questions for VFDs, servo drives, industrial power supplies and PLC cabinets.
 permalink: /applications/mov-for-industrial-power/
+conversion_source: industrial-power
+conversion_application: industrial-power
 ---
 ## Answer first
 
 For VFDs, servo drives, industrial power supplies and PLC cabinets, start with the actual supply path and connected interfaces. MOV protection can be considered at defined transient-entry or sensitive-circuit locations, but the final placement, rating and coordination depend on the completed industrial system design.
+
+{% include conversion-comparison.html source="industrial-power" application="industrial-power" %}
 
 ## Typical protection locations
 
@@ -15,6 +19,8 @@ For VFDs, servo drives, industrial power supplies and PLC cabinets, start with t
 | DC link / conversion path | Architecture-specific stress path | Actual topology, voltage range, insulation and component coordination |
 | Auxiliary supply | Separate control-power exposure | Supply architecture, interface tolerance and layout |
 | PLC / control cabinet interfaces | External wiring and switching environment | Interface definition, cable route and specified protection method |
+
+{% include conversion-sample.html source="industrial-power" application="industrial-power" %}
 
 <aside class="notice"><strong>Typical location only.</strong> Actual topology depends on system design. Treat VFD, servo and PLC-cabinet protection as separate application reviews, not a copied circuit.</aside>
 

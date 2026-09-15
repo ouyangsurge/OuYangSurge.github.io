@@ -1,0 +1,7 @@
+{% capture sample_url %}/ask-owen/?source={{ include.source | url_encode }}&intent=sample-request&application={{ include.application | url_encode }}{% endcapture %}
+<aside class="conversion-hook" aria-label="Sample evaluation">
+  <p class="eyebrow">SAMPLE EVALUATION</p>
+  <p><strong>Ready to evaluate a candidate?</strong></p>
+  <p>Send your existing MOV model and application. Owen can help arrange a practical sample evaluation.</p>
+  <div class="cta-actions"><a class="button primary" data-conversion="sample-request" data-source="{{ include.source }}" data-application="{{ include.application }}" href="{{ sample_url | relative_url }}">Request a Sample</a><a class="button" data-conversion="whatsapp" data-source="{{ include.source }}" data-application="{{ include.application }}" href="https://wa.me/8613367909790">WhatsApp Owen</a></div>
+</aside>

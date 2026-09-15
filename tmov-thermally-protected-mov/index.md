@@ -2,10 +2,14 @@
 title: TMOV and Thermally Protected MOV Guide
 description: Understand when thermally protected MOVs may be relevant, how they differ from a standalone MOV in the protection path, and what to validate.
 permalink: /tmov-thermally-protected-mov/
+conversion_source: tmov-guide
+conversion_application: tmov
 ---
 ## Answer first
 
 A thermally protected MOV (often called TMOV) combines a varistor function with a thermal-disconnect function in a defined construction. It can be relevant where the protection path needs a controlled response to MOV overheating or end-of-life stress—but it is not a universal drop-in substitute for every standalone MOV. Verify the actual component’s datasheet, coordination, spacing, enclosure and system test plan.
+
+{% include conversion-comparison.html source="tmov-guide" application="tmov" %}
 
 ## MOV versus TMOV
 
@@ -14,6 +18,8 @@ A thermally protected MOV (often called TMOV) combines a varistor function with 
 | Main function | Transient voltage limiting in the selected circuit | Transient voltage limiting plus a specified thermal-disconnect behavior |
 | Design review | MOV duty, upstream protection, board/enclosure response | The same review plus disconnect behavior, indication if present and post-operation safety |
 | Selection risk | Treating a pulse rating as lifetime proof | Treating the thermal feature as proof of complete SPD compliance |
+
+{% include conversion-sample.html source="tmov-guide" application="tmov" %}
 
 ## Where thermal protection can matter
 

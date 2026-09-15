@@ -1,0 +1,8 @@
+{% capture comparison_url %}/ask-owen/?source={{ include.source | url_encode }}&intent=existing-mov-comparison&application={{ include.application | url_encode }}{% endcapture %}
+{% capture datasheet_url %}/ask-owen/?source={{ include.source | url_encode }}&intent=datasheet&application={{ include.application | url_encode }}{% endcapture %}
+<aside class="conversion-hook" aria-label="Existing MOV comparison">
+  <p class="eyebrow">EXISTING PART COMPARISON</p>
+  <p><strong>Already using an MOV?</strong></p>
+  <p>Send Owen the existing part number or datasheet. We can help structure a practical second-source comparison.</p>
+  <div class="cta-actions"><a class="button primary" data-conversion="existing-mov-comparison" data-source="{{ include.source }}" data-application="{{ include.application }}" href="{{ comparison_url | relative_url }}">Compare My Existing MOV</a><a class="button" data-conversion="datasheet" data-source="{{ include.source }}" data-application="{{ include.application }}" href="{{ datasheet_url | relative_url }}">Send a Datasheet</a></div>
+</aside>

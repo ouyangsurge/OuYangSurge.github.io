@@ -2,10 +2,14 @@
 title: MOV for Energy Storage PCS Surge Protection
 description: Practical MOV protection-location and second-source questions for energy storage power conversion systems: AC side, DC side and auxiliary power.
 permalink: /applications/mov-for-energy-storage-pcs/
+conversion_source: energy-storage-pcs
+conversion_application: energy-storage-pcs
 ---
 ## Answer first
 
 In an energy storage PCS, MOV and surge-protection selection should distinguish the AC side, DC side and auxiliary-power paths. The correct component and location depend on the real PCS architecture, continuous voltage, earthing scheme, transient entry route, downstream limits and failure response.
+
+{% include conversion-comparison.html source="energy-storage-pcs" application="energy-storage-pcs" %}
 
 ## Typical protection locations
 
@@ -15,6 +19,8 @@ In an energy storage PCS, MOV and surge-protection selection should distinguish 
 | DC side | Battery/DC-link architecture has its own voltage and insulation conditions | DC range, topology, insulation coordination and transient path |
 | Auxiliary power | Control and service supplies may be exposed independently | Supply type, interface sensitivity and coordinated protection |
 | External control interfaces | Field wiring can create a separate exposure route | Interface architecture and applicable protection method |
+
+{% include conversion-sample.html source="energy-storage-pcs" application="energy-storage-pcs" %}
 
 <aside class="notice"><strong>Typical location only.</strong> Actual topology depends on system design. The PCS owner must define the protection architecture and acceptance criteria.</aside>
 

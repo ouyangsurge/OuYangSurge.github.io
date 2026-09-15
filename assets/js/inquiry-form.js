@@ -3,6 +3,14 @@
   var form = document.querySelector('.private-inquiry-form');
   if (!form) return;
 
+  var params = new URLSearchParams(window.location.search);
+  ['source_page', 'intent', 'application'].forEach(function (field) {
+    var parameter = field === 'source_page' ? 'source' : field;
+    var value = params.get(parameter);
+    var input = form.querySelector('[name="' + field + '"]');
+    if (value && input) input.value = value.slice(0, 100);
+  });
+
   form.addEventListener('submit', async function (event) {
     event.preventDefault();
     var status = form.querySelector('.form-status');

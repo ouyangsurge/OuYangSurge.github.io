@@ -2,10 +2,14 @@
 title: Metal Oxide Varistor Selection Guide
 description: A practical MOV selection guide for continuous voltage, varistor voltage, clamping level, surge duty, package size and validation boundaries.
 permalink: /mov-selection-guide/
+conversion_source: mov-selection-guide
+conversion_application: mov-selection
 ---
 ## Answer first
 
 Select a metal oxide varistor (MOV) from the **actual protection path**, not from one catalogue value. Define continuous AC/DC voltage, the protected circuit’s tolerance, expected transient waveform, clamping requirement, surge duty, environment and failure handling. A disc diameter, varistor voltage or energy value only has meaning with the supplier’s stated method and conditions.
+
+{% include conversion-comparison.html source="mov-selection-guide" application="mov-selection" %}
 
 ## What an MOV is doing
 
@@ -19,6 +23,8 @@ An MOV is a nonlinear voltage-dependent component used to limit a transient volt
 | Surge current and waveform | Determines relevant pulse duty | Different waveform ratings can be compared directly |
 | Energy and repetition | Helps define duty with stated pulse conditions | A single-pulse value proves lifetime |
 | Diameter, leads and layout | Affect pulse handling, parasitics and assembly | Larger always means qualified |
+
+{% include conversion-sample.html source="mov-selection-guide" application="mov-selection" %}
 
 ## Selection sequence
 
